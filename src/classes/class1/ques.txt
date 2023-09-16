@@ -1,0 +1,14 @@
+1) What are all the datatypes in java?
+There are 8 primitives datatypes and infinite number of non-primitive datatypes are available in java.
+Those 8 are:
+byte, short, int, long, float, double, char, boolean
+
+2) Can I create the array of size 0?
+Yes, it is possible to create array of size 0 in java. This is valid.
+This is known as empty array and can be useful where you want an array to exist but don't need to allocate any memory for elements.
+The reference to the array itself still exists, but it doesn't consume memory for storing actual data because there are no elements to store.
+
+3) Can I extend the array size?
+No, this is not allowed in java. When array is created, it itself ask to define the size otherwise it is not possible to create the array.
+We can create the array by initializing at the time of creation but then it picks the size of the number of elements that is passed. So, without size array
+can not be created in java.
