@@ -1,0 +1,24 @@
+1) Why duplicate string objects in constant pool are not allowed?
+- If duplicate objects are allowed in the constant pool, for each string having same value there will be a different
+object which will unnecessary increase the burden on the memory  management. So, duplicates are not allowed in order to
+achieve the reusability concept.
+
+2) Why String is immutable?
+- After achieving the reusability concept in java for string datatype, it becomes difficult to update the data
+for one record. If data for one record gets updated, ultimately all the records are getting updated since they all
+are pointing to the same object reference. That's why it became mandatory to make String datatype immutable so that
+if one record changes, all other records must not get affected.
+
+3) Is it good to perform update operation on string for large data set?
+- Definitely no. For performing update operation on string for large data, we have StringBuffer & StringBuilder
+which are mutable in nature and allow the updation within the same object so that update / delete operation can be faster
+
+4) Distinguish between StringBuffer & StringBuilder
+StringBuffer:
+    - It allows only one thread to process on the StringBuffer object
+    - It is thread safe.
+    - It is a bit slow since it allows only one thread at a time to process.
+StringBuilder:
+    - It allows multiple threads to process on the StringBuilder object
+    - It is not thread safe.
+    - It is bit faster since it allows multiple threads at a time to process.
