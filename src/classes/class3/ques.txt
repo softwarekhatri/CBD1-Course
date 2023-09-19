@@ -1,0 +1,38 @@
+1) What is the parent class of exception?
+
+2) What are checked & unchecked exception? Give an example / demo of both
+
+3) What is hierarchy of the exception?
+
+4) What are the common exception class that comes under RuntimeException?
+
+5) How to throw / generate a exception in java? Give a example
+if(s == null){
+throw new RuntimeException();
+}
+
+6) Where is throw & throws keywords are used?
+- throw -> to generate / create an exception explicity.
+        -> ex: throw new RuntimeException("This is a sample exception");
+- throws -> this is always be used at the method level
+         -> It is used to delegate the exception to java to handle automatically
+
+7) Will it possible to catch the exception by super class followed by child class?
+ex: try{
+    // some runtimeException
+    } catch(Throwable ex){
+    } catch(RuntimeException ex){
+    }
+
+8) What is the use case of finally keyword?
+
+9) Can finally work without catch block also?
+
+10) In which case finally block will be executed, with return or System.exit()?
+
+11) What is try with resources?
+
+12) Is try block can be written alone without catch block? and which cases?
+1) Try with finally
+2) Try with resource
+
