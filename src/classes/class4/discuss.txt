@@ -1,0 +1,62 @@
+1) OOP [OBJECT ORIENTED PROGRAMMING]
+--> The real world stuff
+--> Who will use your application?
+    -> users [real world]
+==> What are the pillars? There are 4 pillars of OOPs.
+    i) Encapsulation
+    ii) Inheritance
+    iii) Polymorphism
+    iv) Abstraction
+     ---> Data Hiding (getter & setter)
+
+i) Encapsulation -> Wrapping up of all the data (attributes) inside a single unit [Object]
+
+ii) Inheritance -> 
+    Types of Inheritance
+    i) Single level Inheritance -> (parent -> child)
+    ii) Multi level Inheritance -> (parent -> child -> grandchild), (parent -> child -> grandchild -> grandgrandchild)
+    iii)Hierarchy / tree level Inheritance -> (parent -> child1, child2 )
+    iv) Hybrid Inheritance -> combination of two or more Inheritance
+    v) Multiple Inheritance [Not Available] -> Rumtime ambgious [Overridden] - leads to ambuiguity [using interface]
+        --> Example of Multiple Inheritance
+
+iii) Polymorphism -> 
+        i) Runtime Polymorphism (dynamic binding) -> overriding
+        ii)Compile time Polymorphism (static binding) --> overloading
+
+iv) Abstraction -> Hides the implementation and expose the behaviour [interface]
+    List<Student> getAllStudent(); --> returning all the students
+    Student saveNewStudent(Student s1); --> Saves and return the updated student object
+
+2) Functional / Procedural PROGRAMMING 
+    -> Functions
+
+
+==============================================>
+1) Why interface is used?
+-> It enforces us to implement the base behaviour of the model / component.
+-> interface is used when you've common functionality across the implementation.
+-> Interface also provides you the default implementation.
+    -> Default implementation could be or could not be Overridden by the implementation class.
+-> When declaring any variable / identifier inside interface, it works as a constant.
+
+2) application of Interfaces?
+-> It provides high level understanding and readibility.
+-> It becomes very flexible to write the new implementation as much as want.
+-> It is used to achieved Abstraction [high level implementation]
+-> It is used to loose coupling.
+-> It is used to multiple inheritance.
+-> An interface can also extend another interface.
+
+3) Type of interfaces in java
+-> Marker interface
+    -> An interface which is having no methods inside this.
+        -> Serializable, Cloneable, Remote
+    -> It is used as a tag to identify and expose the behaviour
+-> Functional interface
+    -> An interface which is having exactly one abstract method & could be zero or more default method.
+        -> interface with two abstract method -> false
+        -> interface with two abstract method + one default method -> false
+        -> interface with one default method -> false
+        -> interface with one abstract method + one default method -> true
+    -> Example: Runnable, Function, Supplier, Consumer, Predicate
