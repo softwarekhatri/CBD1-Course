@@ -1,0 +1,52 @@
+1) What is Data hiding?
+--> It allows to manange the privacy.
+---> Data hiding refers to management of privacy via using access modifiers.
+---> Types of Access modifiers
+    i) Public -> It allows from any package or from any class to access the value.
+    ii) Private -> It allows only the same class to access the value.
+    iii) Protected -> It allows only child class & the classes with in the same package to access the value.
+    iv) default -> This only allows to access from within the same package.
+
+2) What is the differences b/w Data hiding & Abstraction?
+
+3) How to create a Immutable Custom class?
+1. To make the class final -> you are not allowed to inherit or create child class
+2. Hides the setter method
+3. Only provide getter method
+
+4) What is singleton class?
+-> singleton class is the class which allow only one instance of the class at any point of time.
+
+5) Where single class has been used?
+-> For state management
+
+6) What steps to create singletong class?
+1. To make constructor private
+2. Create a static variable with private of same class Type
+3. Expose [Publicly] a static method to get the instance.
+some condition -> create object if member variable is null else return the same member variable
+
+7) Is java a object oriented programming?
+--> Yes
+
+8) Is java a fully objected oriented programming?
+--> It is not fully objected programming because it supports primitives datatype. SmallTalk is the pure object oriented programming.
+
+7) What is wrapper classes?
+-> Wrapper class are the wrapper for the primitives datatypes to typecase those into the object format.
+-> Byte, Short, Integer, Long, Float, Double, Boolean, Character
+
+8) Autoboxing
+-> When you assign the primitive value to Wrapper class.
+-> Integer a = 10;
+--> int b = 10; Ineger c = b;
+
+9) Unboxing
+-> When you assign the wrapper class to primitve typecase
+--> int a = new Integer(100);
+--> Integer b = 10; int c = b;
+
+10) What is Java Integer cache?
+
+11) What is the raneg for Java integer cache?
+-> -128 to 127
