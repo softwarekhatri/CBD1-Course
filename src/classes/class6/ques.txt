@@ -1,0 +1,36 @@
+Collection (Interface)
+-- Primitive datatypes are not applicable for collection interface
+-- Its implementation classes are dynamic in nature in terms of sizing.
+-- It is hetrogenous in nature that means it could store different datatypes values all together.
+----------- 
+List (Interface)
+---> Linear type operation
+
+1. ArrayList -> 
+    --> It is dynamic.
+    --> It works on Array Datastructure.
+    --> It is not thread safe. 
+    --> It is not synchornised.
+    --> Example1: ArrayList<Integer> al = new ArrayList(); -- hard dependency
+    --> Example2: List<Integer> al2 = new ArrayList(); -- recommended approach
+
+2. LinkedList ->
+    --> It works on LinkedList Datastructure (Node type structures)
+    --> It is not thread safe.
+    --> It is not synchornised.
+    --> Example1: LinkedList<Integer> ll = new LinkedList();
+    --> Example2: List<Integer> ll2 = new LinkedList();
+
+3. Vector -->
+    --> It works on Array Datastructure.
+    --> It is thread safe.
+    --> It becomes synchornised.
+    --> Example1: Vector<Integer> vv = new Vector();
+    --> Example2: List<Integer> vv2 = new Vector();
+
+4. Stack -->
+    --> It is the child class on Vector
+    --> It works on Array Datastructure.
+    --> It is thread safe.
+    --> Example1: Stack<Integer> st = new Stack();
+    --> Example2: List<Integer> st2 = new Stack();
