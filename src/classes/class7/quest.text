@@ -1,0 +1,22 @@
+--> List
+    -- It preserves the insertion order
+    -- It supports indexing
+    -- Finding a value in list is O(N) time complexity. [It has to search all the elements]
+--> Set
+    -- It does not preserve the insertion order [but LinkedHashSet conflicts]
+    -- No concept of indexing is applicable. Hashcode concept works here.
+    -- It performs add / find(search) /  delete in O(1) time complexity.
+    --> HashSet
+        - It does not preserve insertion order
+        - It works on the principle of HashTable datastructure.
+    -> LinkedHashSet
+        - Preserves insertion order
+        - It works on the principle of LinkedList + HashTable datastructure
+    --> TreeSet
+        - Sorts the data in ascending format
+        - It works on the principle of Tree data structure
+
+Queue
+-----
+---> ArrayDequeue
+    - It works on Array Data structure [ArrayList]
