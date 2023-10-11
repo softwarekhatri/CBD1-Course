@@ -1,0 +1,19 @@
+PriorityQueue
+
+Map Interface |
+-------------- 
+Why map is not included in the collection framework?
+Because Map has two value to work upon i.e key & value pair
+
+Map<Integer, String> 
+MAP --> Interface
+--> works upon key-value pair
+============================>
+Implementation class of Map Interface
+1. HashMap --> It directly implements Map Interface
+    -> Values can be duplicate
+    -> Keys can't be duplicate, if you try to push the same key, the same existing record will be overidden.
+    -> put, get, containsKey, getOrDefault, putIfAbsent
+    -> can not preserve the insertion order
+2. LinkedHashMap -> LinkedList + HashMap (Hybrid Datastructure)
+    -> we can preserve the insertion order

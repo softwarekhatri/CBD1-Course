@@ -2,6 +2,7 @@ package classes.class7;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetClass {
     public static void main(String[] args) {
@@ -19,11 +20,12 @@ public class SetClass {
         // System.out.println("10000 removed " + isRemoved);
         // System.out.println(set);
 
-        HashSet<Integer> set2 = new HashSet<>();
+        TreeSet<Integer> set2 = new TreeSet<>();
         set2.add(100);
         set2.add(0);
+        set2.add(null);
 
-        set.retainAll(set2);
-        System.out.println(set);// [100, 0]
+        // set.retainAll(set2);
+        System.out.println(set2);// [100, 0]
     }
 }

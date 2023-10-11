@@ -25,6 +25,9 @@ public class ListClass {
         boolean isInserted = list.add(1000);
         list.add(3000);
         list.add(5000);
+        list.add(null);
+        list.add(null);
+        System.out.println("value of list is " + list);
 
         Integer object = 30;
         boolean removedValue = list.remove(object);
