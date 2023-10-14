@@ -1,0 +1,34 @@
+===>
+Java is compiler based language or interpreter based language?
+=====>
+c / c++ (purely compiler based language)
+1. It compiles all the source code at once
+2. It create the obj file (which the native / binary code)
+3. It executes the obj file
+============>
+Python (purely interpreter based language)
+1. It will execute one statement followed by another statement
+2. It will throw error if any of the line got failed
+3. while failing, it would have printed out / executed the previous part / code.
+===============>
+Java (both - compiler (JIT - Just in time compiler) + interpreter based language)
+1. Jit compiles the whole source code into byte code (middle level language)
+2. It uses interpreter mechanism to execute one statement at a time from the byte code file.
+====================>
+JDK / JRE / JVM
+
+===============================================
+Generics In Java |
+-----------------
+====> Generics refers to the word generic
+---> To create / to handle / to develop mechanism that could work with multiple datatypes
+---->
+generics can be applied on only two levels:
+1) Class / Interface level
+2) method level
+
+There is two ways to define generics in method level
+<Y> void toReturn(Y body) {
+}
+public <Y> void toReturn2(Y body) {
+}
