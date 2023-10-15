@@ -1,0 +1,13 @@
+Stream in Java
+----------------
+Streaming means sending the chunks of data.
+Stream can be of two types:
+    1. Sequential
+    2. Parallel
+
+Pipeline is nothing but to provide the stages to solve a problem / execute the steps.
+Pipeline example could be : stage1 -> stage2 -> stage3
+if any of the stage fails in between, then it would be start from scratch (edge case could be it could resume from where it got failed)
+-----------------
+Stream comes in Java 1.8 version.
+Stream is applicable to all collection type.
