@@ -1,0 +1,16 @@
+{
+    "student": {
+        "name": "Ankit",
+        "id": 101,
+        "address": {
+            "street": "Abc",
+            "city": "Delhi",
+            "state": "New Delhi",
+            "zip": 110086
+        },
+        "phone": [
+            "+91 7209703947",
+            "+91"
+        ]
+    }
+}

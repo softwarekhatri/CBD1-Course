@@ -1,0 +1,44 @@
+1. What is a Framework?
+---> A utility project is nothing but a Framework.
+ ----> 
+
+ ==========>
+ History of Java
+ ---->
+Java SE -> Standard Edition
+Java EE -> Enterprise Edition [Web Application]
+    -> JSP
+    -> Struts
+
+Level of History in Java EE Architecture
+1. Level 1 -> JSP
+2. Level 2 -> Java Servlet [Java code]
+    -> Seperated out Java code in java class file and html code in JSP (less java code)
+3. Level 3 -> Spring Framework
+    --> Level 3.0 -> Spring Framework / Spring [configuration file --> Tomcat, Paytm, PhonePe]
+        --> More of xml configuration was there -> [Bean mapping, url / servlet mapping]
+    --> Level 3.1 -> Spring Boot [Reduces the xml configuration & provided the support of annotation]
+
+@Override
+@Bean
+public void run(){
+
+}
+
+public void BeanExecutor{
+    public void execute(){
+        // 1. Fetch all the methods having @Bean
+        // 2. Create the object for all the methods
+    }
+}
+
+--> Sort an array
+---> 1. Write custom logic
+---> 2. Arrays.sort(arr) / Collections.sort(al)
+
+
+--------------->
+Type of Spring Boot project
+1. Maven
+2. Gradle
+3. Kotlin

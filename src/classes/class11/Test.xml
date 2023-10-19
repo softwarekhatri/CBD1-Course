@@ -1,0 +1,8 @@
+<student>
+    <name>Ankit</name>
+    <id>101</id>
+    <address>
+        <street>Abc</stree>
+        <city>Delhi</city>
+    </address>
+</student>

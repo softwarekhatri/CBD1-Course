@@ -1,0 +1,7 @@
+student:
+  name: Ankit
+  id: 101
+  address:
+    street: Abc
+    city: Delhi
+    state: New Delhi
