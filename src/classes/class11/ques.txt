@@ -5,7 +5,7 @@
  ==========>
  History of Java
  ---->
-Java SE -> Standard Edition
+Java SE -> Standard Edition (StandAlone application)
 Java EE -> Enterprise Edition [Web Application]
     -> JSP
     -> Struts

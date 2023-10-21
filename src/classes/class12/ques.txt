@@ -1,0 +1,56 @@
+-->
+Two types of Java Packaging
+1) Jar -> Java Archieve
+2) War -> Web Archieve (until or unless till Spring does not come)
+    --> Maven (Project / Architecture tool)
+        ---> mvn install <java - project> -war
+        ---> maven can create jar, war etc [just by defining the command]
+
+
+MVC Model 
+----> Model view controller
+1) Model -> Business logic
+2) view -> UI / html / jsp page / data returned to user
+3) controller -> mapping of urls
+
+API --> (Backend Developer)
+----------->
+Application Programming interface
+--> It is nothing but a url
+
+http://localhost:8080/getStudent -- Java / NodeJs / Ruby / python
+
+---------------------------------->
+Student Project
+1. Create API -> Will create Student
+2. Get API -> Return all students
+3. Get Student By Id -> Return one student
+4. Update API -> Update student
+5. Delete API -> Delete student
+
+------------->
+1. Spring always creates singleton class object [by default]
+2. Jackson is responsible for transforming the inputData to Java Object
+    -> By Default json is used
+
+============>
+1. controller
+    -> @RestController makes a normal Java class to a controller class
+    -> There are several mappings need to be defined like
+        -> GetMapping
+        -> PostMapping
+        -> PutMapping
+        etc
+2. Service
+    -> Service Layer should be interface always
+    -> Creates a default implementation
+    -> Create object by using @Service annotation
+3. view
+    -> Json / Java Object
+4. @Autowired
+    -> Helps to inject the available object
+
+
+
+
+

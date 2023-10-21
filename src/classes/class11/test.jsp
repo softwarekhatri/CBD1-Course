@@ -23,7 +23,6 @@
         int c = add(2, 2);
         sout(c);
 
-
         private int add(int a, int b){
             return a + b;
         }
