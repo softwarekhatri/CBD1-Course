@@ -1,0 +1,17 @@
+1) @Component [Base]
+    -> It creates a bean / object of a class on runtime.
+    -> It can be applied on interface [but if there no implementation class available, it will not create object]
+    -> @Component("tag-name) - tag-name is used for tagging the object / bean
+2) @Service
+    -> Same as @Component
+    -> Preferred for Service layer
+3) @Repository
+    -> Same as @Component
+    -> Preferred for Dao [Data Authenticaion layer] layer
+4) @Bean
+    -> It creates an object on the runtime.
+    -> It applies on the method.
+
+DTO
+@PathVariable
+@RequestParam
