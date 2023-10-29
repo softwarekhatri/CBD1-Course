@@ -1,0 +1,32 @@
+Project Requirement
+-----------------------
+
+Product Project |
+-----------------
+1. Able to perform CRUD operation
+2. Product has 
+    id, name, List<Images>, category, ratings, price, stocks
+3. We want to perform sort [ratings, prices], or searching[id, name, category]
+4. MySQL, H2, Mongodb.
+5. Swagger
+6. Dto [Data Transfer object]
+7. Dao [Data Access object]
+------------
+1. JPA
+
+
+---------------->
+JPA -> Java Persistence API is an interface.
+
+Hibernate -> Hibernate is an ORM (Object Relational Model) tool which is used by JPA by default.
+Sequelize -> It is an another ORM.
+
+Swagger ->
+    It is a tool which works like a postman inside the browser
+
+
+Swagger UI
+http://localhost:8080/swagger-ui/index.html#/
+
+H2 Database
+http://localhost:8080/h2-console/
