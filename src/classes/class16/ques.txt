@@ -6,6 +6,7 @@ Java Sorting Mechanism |
     --> It lies in java.lang package
     --> It has only one method compareTo()
     --> It is used to provide default sorting order
+    --> It is implemented by all the wrapper class and string class
 2. Comparator -
     --> It is also an interface in Java
     --> It lies in java.util package
@@ -13,6 +14,7 @@ Java Sorting Mechanism |
         -> 1) compare()
         -> 2) equals()
     --> It is used to provide customised sorting order
+    --> It is implemented by Collator, Rule base collator class.
 
 class Student{
 

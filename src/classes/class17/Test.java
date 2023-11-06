@@ -1,11 +1,8 @@
-package classes.class16;
+package classes.class17;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-class TestJava {
-
+public class Test {
     public static void main(String[] args) {
         Employee[] employees = {
                 new Employee("Abc", 10000, "IT", 45),
@@ -18,12 +15,10 @@ class TestJava {
         for (Employee e : employees) {
             System.out.println(e);
         }
-        Arrays.sort(employees, new EmployeeSortByAge());
+        Arrays.sort(employees, (e1, e2) -> e2.dept.compareTo(e1.dept));
         System.out.println("================= After Sorting==============");
         for (Employee e : employees) {
             System.out.println(e);
         }
-
     }
-
 }

@@ -3,10 +3,10 @@ package classes.class16;
 // 
 public class Employee implements Comparable<Employee> {
 
-    private String name;
-    private double salary;
-    private int age;
-    private String dept;
+    public String name;
+    public double salary;
+    public int age;
+    public String dept;
 
     public Employee() {
 
@@ -30,17 +30,18 @@ public class Employee implements Comparable<Employee> {
     @Override
     public int compareTo(Employee secondEmployee) {
         if (this.salary == secondEmployee.salary) {
-            if (this.age == secondEmployee.age) {
-                return 0;
-            } else if (this.age < secondEmployee.age) {
-                return -1;
-            } else {
-                return 1;
-            }
-        } else if (this.salary > secondEmployee.salary) {
-            return -1;
-        } else {
+            return 0;
+            // if (this.age == secondEmployee.age) {
+            // return 0;
+            // } else if (this.age < secondEmployee.age) {
+            // return -1;
+            // } else {
+            // return 1;
+            // }
+        } else if (this.salary < secondEmployee.salary) {
             return 1;
+        } else {
+            return -1;
         }
     }
 
