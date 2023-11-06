@@ -1,0 +1,21 @@
+Java Sorting Mechanism |
+-----------------------
+## Differences between Comparable & Comparator
+1. Comparable - 
+    --> It is an interface in Java
+    --> It lies in java.lang package
+    --> It has only one method compareTo()
+    --> It is used to provide default sorting order
+2. Comparator -
+    --> It is also an interface in Java
+    --> It lies in java.util package
+    --> It has two methods
+        -> 1) compare()
+        -> 2) equals()
+    --> It is used to provide customised sorting order
+
+class Student{
+
+    // to sort the student on rollNo
+}
+

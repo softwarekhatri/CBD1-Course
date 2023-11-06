@@ -1,6 +1,6 @@
 package classes.class4;
 
-public class Student implements Cloneable{
+public class Student implements Cloneable {
 
     private String name; // Ankit
     private String fathersName; // ABC
@@ -8,6 +8,16 @@ public class Student implements Cloneable{
     private StudentAddress address; // {hNo -> A-47, city -> Delhi}
     private Student[] friends; // [{name -> Yogesh, fathersNam -> xyz, friends -> []}, {name -> Ramesh, age ->
                                // 60}]
+
+    public Student() {
+
+    }
+
+    public Student(int age, String name, String fatherName) {
+        this.age = age;
+        this.name = name;
+        this.fathersName = fatherName;
+    }
 
     public static void main(String[] args) throws Exception {
         Student s = new Student();
