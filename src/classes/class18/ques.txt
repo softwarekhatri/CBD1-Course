@@ -1,0 +1,27 @@
+Types of Backend Architecture
+1. Monolithic
+2. Microservice
+
+Monolithic -> All components inside one single project.
+Limitations:
+1. If one component gets affected, the rest of the components will get affected.
+2. More costs would be there.
+3. Upgrdaing the infra of a machine for single project is termed as vertical scaling.
+4. The project becomes bulky & hard to manage.
+5. Difficult to deploy / debug / testing / sharing.
+
+Advantages:
+1. Monolithic Architecture is faster than Microservice Architecture
+    -> Microservice Architecture includes network calls
+    -> Monolithic Architecture process all inside own system
+
+Microservice -> Different components in Different projects.
+Advantages:
+1. Less code & easy to maintain
+2. Easy to deploy / testing / debugging / sharing.
+3. If one component gets affected, the rest of the components will work.
+4. Will be Upgrdaing to the required component in Microservice Architecture.
+
+Limitations: 
+1. The timing will increase because it includes network calls.
+

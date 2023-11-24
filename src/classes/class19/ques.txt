@@ -1,0 +1,30 @@
+Monolithic Architecture
+
+User
+=======
+1. id
+2. name
+3. email
+4. password
+
+
+Product
+======
+1. id
+2. name
+3. price
+4. color
+
+Order
+======
+1. id
+2. createdAt
+3. List<product_id>
+4. payment_id
+5. user_id
+
+
+
+1. To query on orders table by user_id
+    ==> List<Order> findByUserId();
+    ==> Select * from Orders where user_id = ?
