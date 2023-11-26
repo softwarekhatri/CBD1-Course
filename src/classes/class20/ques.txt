@@ -1,0 +1,39 @@
+Microservice architecture
+
+User
+=======
+sever.port = 8080
+MySQL
+
+
+Product
+=======
+server.port = 9090
+H2 Database
+
+Order
+========
+server.port = 7070
+MongoDB
+
+
+Http Status code
+-------------------
+200 ===
+201 ===
+202 ===
+2xx ==> Success response
+----------
+
+400
+401
+402
+4xx ===> Bad Request (Client Error)
+-------------
+
+500
+501
+502
+503
+5xx ===> Server Error
+--------------
