@@ -1,0 +1,54 @@
+Spring Boot exception Handling
+===============================
+Exception Handling: It refers to avoid the unexpected behaviour of the program.
+
+===============================
+1. try, catch ==> 
+catch -> To handle the exception
+
+Example:
+main(){
+    int a = 10 / 5;
+    sout(a); // 2
+
+    int b = 10 / 0;
+    sout(b); // exception
+
+    @RequestBody UserDto userDto;
+}
+
+@ExceptionHandler
+class {
+
+    @Arthimetic Exception
+    f1(){
+        return "Arthimetic exception occured in the system";
+    }
+
+    @InputValidation [400 - Bad Request]
+    f2(){
+        return "Validation failed in :{}";
+    }
+
+    404 - Not found
+    /user-delete-by-id -- present
+    /user-delete-by-name -- calling
+}
+==============================================
+
+Solution to handle custom exception Handling
+1. Create a dto to return the error message
+    {
+        "code" : 1012,
+        "message": "Validation failed in phoneNumber"
+    }
+
+2. Exception class with categorised httpstatus code
+    1. InputValidationException.class => 400 Bad Request
+    2. EcommerceException.class => 500 Internal Server Error
+    3. NotFoundExceptionHandler.class => 404 Not found
+
+3. To create enum with ErrorCode & errormessage
+
+4. Create ExceptionHandler which will able to handle all the exceptions arise in
+the project
