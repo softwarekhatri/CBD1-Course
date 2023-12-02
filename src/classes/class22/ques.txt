@@ -1,0 +1,27 @@
+Spring security
+-----------------
+-> It is responsible to handle the security part / config in spring boot project
+-> We can add login / logout functionalities
+-> Adding hardcode user for login / logout
+-> Internal working functionalities of spring security login / logout
+
+---> Types of authentication
+1. Session Based authentication -> session expired (1-2 days)
+2. Token Based authentication
+3. refresh token based authentication --> 
+
+-> Reading user from database for login / logout
+-> storing the password in encrypted form
+-> We can add JWT authentication / authorization mechanism.
+
+
+Map<String, UserObject> cache = new HashMap<>();
+cache.put();
+cache.containsKey(JSESSIONID); // If present -> then allow to move to controller
+cache.containsKey(JSESSIONID); // If not present -> then discard the request with unauthorised message
+
+// 1. Login 
+    --> Username + password
+    --> It validates with the configured username & password
+    --> If does not matches, redirect to login error page (Bad credential)
+    --> If matches, it generates the token. The token will be stored in cache (hashmap)
