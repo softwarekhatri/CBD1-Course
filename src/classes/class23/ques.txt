@@ -1,0 +1,53 @@
+
+    [org.springframework.security.web.session.DisableEncodeUrlFilter@5edaa572, 
+    org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1892865f, 
+    org.springframework.security.web.context.SecurityContextHolderFilter@29c76d75, 
+    org.springframework.security.web.header.HeaderWriterFilter@5089a72b, 
+    org.springframework.web.filter.CorsFilter@460df441, 
+    org.springframework.security.web.csrf.CsrfFilter@51b11186, 
+    org.springframework.security.web.authentication.logout.LogoutFilter@79982bcc, 
+    org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17344d7, 
+    org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1977b0df, 
+    org.springframework.security.web.authentication.AnonymousAuthenticationFilter@761f1a28, 
+    org.springframework.security.web.access.ExceptionTranslationFilter@52a2e2fb]
+
+
+========================>
+public class User{ 
+
+    String name = "Ankit";
+    String phoneNumber = "123";
+
+    String id;
+    boolean isOld;
+}
+
+User user = new User();
+user.getName(); // Ankit
+user.getPhoneNumber(); // 123
+user.getId(); // null
+user.getIsOld(); // false
+
+
+public class SecurityFilterChain{
+
+    private boolean securedAllApis;
+    private boolean isCsrfEnabled = true;
+}
+
+// custom created SecurityFilterChain
+SecurityFilterChain obj = new SecurityFilterChain();
+obj.getSecuredAllapis(); // false
+obj.getIsCsrfEnabled(); // true
+
+// by default securityFilterChain object creation [Spring Boot]
+SecurityFilterChain obj2 = new SecurityFilterChain();
+obj2.setSecuredAllApis(true);
+
+obj2.getSecuredAllapis(); // true
+obj2.getIsCsrfEnabled(); // true
+
+
+
+
+
