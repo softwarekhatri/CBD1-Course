@@ -1,0 +1,18 @@
+Spring security default behaviour
+
+1. CSRF token -> It is enabled by default
+2. JSesssionID authentication type is enabled by default
+
+Current use case:
+1. To build a backend application [mobile, browser, third party application]
+2. Token Based application -> JWT / Ankit-token
+3. Create one filter
+    => will delegate the open request to spring security
+    => handle the secured apis
+        => retrieve / parse the token
+        => validate token
+        => setting authorization
+
+Creating a filter class in java
+1. To implement filter interface (Java legacy interface)
+2. OncePerRequestFilter class (Spring boot enhannced filter class)
