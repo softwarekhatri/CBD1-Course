@@ -1,0 +1,11 @@
+1. Creating a new project (ecommerce 2)
+==========
+2. To add the dependency
+    -> JPA
+    -> MYSQL Connector
+    -> Security
+    -> JWT token
+    -> Swagger
+3. Storing the user entity to database
+4. Handling with custom exceptions
+5. Will be implementing login system using JWT
