@@ -1,0 +1,21 @@
+1. Login API
+    ---- Request
+        -> email
+        -> password
+    ---- Response
+        -> token -> <JwtToken>
+        -> tokenType -> <Bearer>
+
+2. UserDetailsService
+    loadByUsername
+
+3. Filter (AuthenticationFilter)
+
+4. Registering the Filter
+    -> SecurityConfig File
+
+5. JwtServiceImpl
+
+
+
+=====> Dependencies -> To generate jwt Token
